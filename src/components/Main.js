@@ -2,12 +2,13 @@ import React, { useState } from "react"
 import * as S from "./styles/BodyStyles"
 // images
 import Logo from "../assets/logo.png"
+import defaultImage from "../assets/defaultImage.png"
 
 // components
 import { Api } from "./Api";
 
 export default function SiteBody() {
-    const [dog, setDog] = useState([])
+    const [dog, setDog] = useState(defaultImage)
     const [buttonTitle, setButtonTitle] = useState("Ver Cães")
 
     const dogImage = async () => {
