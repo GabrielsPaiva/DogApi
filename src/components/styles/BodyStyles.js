@@ -1,7 +1,7 @@
 import styled from "styled-components"
+import media from "styled-media-query"
 
 export const Div = styled.div`
-
 `
 export const LogoBox = styled.div`
 display: flex;
@@ -9,7 +9,6 @@ justify-content: center;
 align-items: center;
 width: 100%;
 height: 10em; 
-
 `
 export const Logo = styled.img`
 margin-top: 3em;
@@ -30,5 +29,15 @@ height: 2em;
 `
 export const DogImage = styled.img`
 width: 35%;
-height: 35em;
+height: 35vw;
+
+${media.lessThan("medium")`
+width: 60%;
+height: 60vw;
+`}
+${media.lessThan("small")`
+margin-top: 3em;
+width: 80%;
+height: 80vw;
+`}
 `
