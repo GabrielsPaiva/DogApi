@@ -1,5 +1,6 @@
 import React, { useState } from "react"
 import * as S from "./styles/BodyStyles"
+
 // images
 import Logo from "../assets/logo.png"
 import defaultImage from "../assets/defaultImage.png"

@@ -26,6 +26,7 @@ margin-bottom: 1.5em;
 border-radius: 5px;
 width: 10em;
 height: 2em;
+cursor: pointer;
 `
 export const DogImage = styled.img`
 width: 35%;
